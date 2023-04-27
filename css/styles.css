@@ -46,7 +46,7 @@ nav {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 30px;
-  background: url("/images/japan-1.jpg");
+  background: url("../images/japan-1.jpg");
   background-size: contain;
   background-repeat: no-repeat;
 }
