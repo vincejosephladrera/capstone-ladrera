@@ -1,0 +1,57 @@
+@import "variables";
+
+#side-nav {
+  background-color: $primary-color;
+  height: 100vh;
+  width: 90px;
+  display: flex;
+  position: fixed;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+}
+
+a.icons {
+  background-color: $secondary-color;
+  font-size: 24px;
+  width: 70px;
+  padding: 9px;
+  border-radius: 15px;
+  transition: 0.4s;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+a.icons:hover {
+  background-color: bisque;
+  border-radius: 40px;
+}
+
+.icons-label {
+  font-size: 12px;
+  text-transform: uppercase;
+  font-family: $primary-font-style;
+  font-weight: bold;
+  letter-spacing: 0.4px;
+}
+
+.icons-container {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+#first-icon-container {
+  margin-top: 10px;
+}
+
+#last-icon-container {
+  margin-bottom: 10px;
+}
+
+@media only screen and (width <= 768px) {
+  #side-nav {
+    display: none;
+  }
+}

@@ -1,0 +1,120 @@
+#about-me-page-hobby {
+  background-color: #282a35;
+  font-family: "Open Sans", sans-serif;
+  color: #ffc0c7;
+  text-align: center;
+  height: 100vh;
+}
+
+h1.second-page {
+  display: block;
+  font-size: 32px;
+  width: 100vw;
+  padding-top: 100px;
+}
+
+.image {
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+  width: 100%;
+}
+
+.image-container.second-page {
+  width: 450px;
+}
+
+.travelling-hobby-container.second-page {
+  display: flex;
+  justify-content: center;
+  gap: 60px;
+  width: 100%;
+  margin-top: 30px;
+  margin-left: -50px;
+  height: auto;
+}
+
+.travelling-caption-container.second-page {
+  width: 500px;
+  background-color: #ffc0c7;
+  padding: 10px;
+  height: auto;
+  display: flex;
+  align-items: center;
+}
+
+.travelling-image-container.second-page {
+  display: flex;
+  justify-content: start;
+  gap: 10px;
+}
+
+h2.second-page {
+  text-align: left;
+  font-size: 24px;
+  color: #5d0510;
+  vertical-align: middle;
+}
+
+@media screen and (width <= 1600px) {
+  .image-container.second-page {
+    width: 300px;
+  }
+}
+@media screen and (width <= 1274px) {
+  .image-container.second-page {
+    width: 250px;
+  }
+}
+@media screen and (width <= 1240px) {
+  .travelling-image-container.second-page {
+    flex-direction: column-reverse;
+  }
+}
+@media screen and (width <= 930px) {
+  .travelling-hobby-container.second-page {
+    flex-direction: column;
+    align-items: center;
+    margin-left: 0px;
+  }
+  .travelling-image-container.second-page {
+    flex-direction: row;
+  }
+}
+@media screen and (width <= 520px) {
+  .travelling-hobby-container.second-page {
+    gap: 20px;
+    height: 100%;
+    margin-top: -100px;
+  }
+  #singapore-one {
+    display: none;
+  }
+  .travelling-image-container {
+    justify-content: start;
+  }
+  .travelling-caption-container.second-page {
+    justify-content: start;
+    margin-top: 0px;
+  }
+}
+@media screen and (width <= 510px) {
+  .travelling-caption-container.second-page {
+    display: none;
+  }
+  .image-container.second-page {
+    width: 400px;
+  }
+  h1.second-page {
+    padding-top: 100px;
+  }
+}
+@media screen and (width <= 425px) {
+  .image-container.second-page {
+    width: 300px;
+  }
+}
+@media screen and (width <= 330px) {
+  .image-container.second-page {
+    width: 250px;
+  }
+}/*# sourceMappingURL=aboutme-page.css.map */

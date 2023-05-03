@@ -1,0 +1,98 @@
+@import "variables";
+
+#bottom-nav {
+  display: none;
+}
+
+@media only screen and (width <= 768px) {
+  #bottom-nav {
+    display: block;
+    height: $nav-measurement;
+    width: 100%;
+    position: fixed;
+    bottom: 0px;
+    background-color: $primary-color;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .icons-container {
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    height: 100%;
+    margin-left: 20px;
+  }
+
+  #burger {
+    font-size: 40px;
+    transition: all 1s;
+    cursor: pointer;
+  }
+
+  #burger.active {
+    transform: rotate(-90deg);
+  }
+
+  #menu-icon {
+    background-color: $secondary-color;
+    font-size: 24px;
+    width: 70px;
+    padding: 9px;
+    border-radius: 15px;
+    transition: 0.4s;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: 2;
+  }
+
+  #menu-icon:hover {
+    background-color: bisque;
+    border-radius: 40px;
+  }
+
+  #about-bottom {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.6s;
+  }
+
+  #about-bottom.show {
+    transform: translateY(-100px);
+    visibility: visible;
+  }
+
+  #works-bottom {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.6s;
+  }
+
+  #works-bottom.show {
+    transform: translateY(-60px) translateX(80px);
+    visibility: visible;
+  }
+
+  #contact-bottom {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.6s;
+  }
+
+  #contact-bottom.show {
+    transform: translateX(140px);
+    visibility: visible;
+  }
+}
+
+@media only screen and (width <= 425px) {
+  #github-icon-bottom {
+    display: none;
+  }
+
+  #linkedin-icon-bottom {
+    display: none;
+  }
+}

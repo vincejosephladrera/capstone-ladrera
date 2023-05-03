@@ -1,17 +1,22 @@
-const burger = document.querySelector("#burger");
+const menuButton = document.querySelector("#menu-icon");
+const aboutButton = document.querySelector("#about-bottom");
+const worksButton = document.querySelector("#works-bottom");
+const contactButton = document.querySelector("#contact-bottom");
 
-const dropdown = document.querySelector("#dropdown-menu");
-
-console.log(dropdown);
-
-burger.addEventListener("click", () => {
-  if (dropdown.classList.contains("show")) {
-    dropdown.classList.remove("show");
-    burger.classList.remove("active");
-    dropdown.classList.add("d-none");
+menuButton.addEventListener("click", () => {
+  if (aboutButton.classList.contains("show")) {
+    aboutButton.classList.remove("show");
   } else {
-    burger.classList.add("active");
-    dropdown.classList.add("show");
-    dropdown.classList.remove("d-none");
+    aboutButton.classList.add("show");
+  }
+  if (worksButton.classList.contains("show")) {
+    worksButton.classList.remove("show");
+  } else {
+    worksButton.classList.add("show");
+  }
+  if (contactButton.classList.contains("show")) {
+    contactButton.classList.remove("show");
+  } else {
+    contactButton.classList.add("show");
   }
 });
