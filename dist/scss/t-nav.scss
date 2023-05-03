@@ -3,26 +3,3 @@
 #top-nav {
   display: none;
 }
-
-@media only screen and (width <= 768px) {
-  #top-nav {
-    position: fixed;
-    top: 0px;
-    height: $nav-measurement;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    background-color: $primary-color;
-    width: 100vw;
-  }
-
-  #top-nav-first-icon-container {
-    flex: 1;
-    margin-left: 10px;
-  }
-
-  #top-nav-last-icon-container {
-    margin-left: auto;
-    margin-right: 10px;
-  }
-}

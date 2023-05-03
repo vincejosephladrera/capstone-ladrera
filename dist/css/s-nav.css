@@ -46,10 +46,4 @@ a.icons:hover {
 
 #last-icon-container {
   margin-bottom: 10px;
-}
-
-@media only screen and (width <= 768px) {
-  #side-nav {
-    display: none;
-  }
 }/*# sourceMappingURL=s-nav.css.map */

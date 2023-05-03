@@ -1,0 +1,65 @@
+@import "variables";
+
+#about-me-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  font-family: $primary-font-style;
+  color: $secondary-color;
+  text-align: center;
+}
+
+p {
+  color: $secondary-color;
+  font-family: $primary-font-style;
+  font-size: 18px;
+}
+
+#about-me-text-container {
+  max-width: 500px;
+}
+
+#about-me-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1.second-page {
+  color: $secondary-color;
+  font-family: $primary-font-style;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+h2.second-page {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3.second-page {
+  font-size: 20px;
+}
+
+#about-me-caption-container {
+  display: flex;
+}
+
+#skills-acquired-container {
+  font-size: 80px;
+}
+
+.skills-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: fit-content;
+  list-style: none;
+}
+
+.skills-icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}

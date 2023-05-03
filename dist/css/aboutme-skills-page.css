@@ -1,0 +1,64 @@
+#about-me-skills {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+  align-items: center;
+  font-family: "Open Sans", sans-serif;
+  color: #ffc0c7;
+  text-align: center;
+}
+
+p {
+  color: #ffc0c7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 18px;
+}
+
+#about-me-text-container {
+  max-width: 500px;
+}
+
+#about-me-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+h1.second-page {
+  color: #ffc0c7;
+  font-family: "Open Sans", sans-serif;
+  font-size: 40px;
+  font-weight: bolder;
+}
+
+h2.second-page {
+  font-size: 20px;
+  font-weight: bold;
+}
+
+h3.second-page {
+  font-size: 20px;
+}
+
+#about-me-caption-container {
+  display: flex;
+}
+
+#skills-acquired-container {
+  font-size: 80px;
+}
+
+.skills-icon {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: -moz-fit-content;
+  width: fit-content;
+  list-style: none;
+}
+
+.skills-icon-container {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}/*# sourceMappingURL=aboutme-skills-page.css.map */

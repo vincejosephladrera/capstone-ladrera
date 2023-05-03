@@ -1,0 +1,46 @@
+@import "variables";
+
+#my-works-page {
+  font-family: $primary-font-style;
+  color: $secondary-color;
+  text-align: center;
+}
+
+.card {
+  border: solid $secondary-color;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 800px;
+}
+
+.card-image {
+  object-fit: contain;
+  width: 100%;
+}
+
+.card-container {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 30px;
+  gap: 20px;
+}
+
+.card-image-caption-container {
+  width: 100%;
+}
+
+h1.fourth-page {
+  font-size: 56px;
+}
+
+h2.fourth-page {
+  font-size: 28px;
+}
+
+button.fourth-page {
+  background-color: $secondary-color;
+  border: $secondary-color solid;
+  color: $accent-color;
+}
