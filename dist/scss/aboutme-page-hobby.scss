@@ -7,53 +7,47 @@
   text-align: center;
   min-height: 100vh;
   max-width: 100vw;
-}
-
-h1.third-page {
-  display: block;
-  font-size: 32px;
-  width: 100vw;
-  padding-top: 100px;
-}
-
-.image {
-  object-fit: contain;
-  width: 100%;
-}
-
-.image-container.third-page {
-  width: 450px;
-}
-
-.travelling-hobby-container.third-page {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px;
-  width: 100%;
-  margin-top: 30px;
-  height: auto;
-}
-
-.travelling-caption-container.third-page {
-  width: 500px;
-  padding: 10px;
-  height: auto;
   display: flex;
   align-items: center;
-  border: $secondary-color dotted;
-}
 
-.travelling-image-container.third-page {
-  display: flex;
-  justify-content: start;
-  gap: 10px;
-  flex-wrap: wrap;
-}
+  .travelling-hobby-container.third-page {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 100%;
+    padding-left: 40px;
+    padding-right: 40px;
+    height: auto;
 
-h2.third-page {
-  text-align: left;
-  font-size: 24px;
-  color: $secondary-color;
-  vertical-align: middle;
+    .travelling-caption-container.third-page {
+      max-width: 900px;
+      height: auto;
+      display: flex;
+      align-items: center;
+      border: $secondary-color dotted;
+
+      h2.third-page {
+        font-size: 2vw;
+      }
+    }
+  }
+
+  .travelling-image-container.third-page {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 100%;
+    flex-wrap: wrap;
+
+    .image-container.third-page {
+      width: 450px;
+
+      .image {
+        object-fit: contain;
+        max-width: 100%;
+      }
+    }
+  }
 }

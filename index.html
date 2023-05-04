@@ -127,7 +127,9 @@
               currently enrolled.
             </p>
           </div>
-          <div id="about-me-image-container"></div>
+          <div id="about-me-image-container">
+            <img src="./dist/images/my-picture.jpg" alt="" class="image" />
+          </div>
         </div>
         <div id="skills-acquired-container">
           <h1 class="second-page">Here are the list of skills I've acquired currently:</h1>
@@ -181,14 +183,12 @@
               culture and meet new people.
             </h2>
           </div>
-          <div>
-            <div class="travelling-image-container third-page">
-              <div class="image-container third-page" id="singapore-one">
-                <img src="./dist/images/singapore-1.jpg" alt="" class="image" / >
-              </div>
-              <div class="image-container third-page">
-                <img src="./dist/images/singapore-2.jpg" alt="" class="image" />
-              </div>
+          <div class="travelling-image-container third-page">
+            <div class="image-container third-page" id="singapore-one">
+              <img src="./dist/images/singapore-1.jpg" alt="" class="image" / >
+            </div>
+            <div class="image-container third-page">
+              <img src="./dist/images/singapore-2.jpg" alt="" class="image" />
             </div>
           </div>
         </div>
@@ -205,20 +205,20 @@
                 CSS Media Queries
               </h2>
               <div>
-                <button class="fourth-page"><h2 class="fourth-page">View Code</h2></button>
+                <a class="fourth-page"><h2 class="fourth-page">View Code</h2></a>
               </div>
             </div>
           </div>
           <div class="card fourth-page">
             <img src="./dist/images/calculator.jpg" alt="" class="card-image fourth-page" />
             <div class="card-image-caption-container fourth-page">
-              <h2>
+              <h2 class="fourth-page">
                 My Calculator is a functional simple calculator app which utilizes JavaScript array
                 methods, string methods and DOM manipulation.
               </h2>
               <div>
-                <button class="fourth-page"><h2 class="fourth-page">View Live</h2></button>
-                <button class="fourth-page"><h2 class="fourth-page">View Code</h2></button>
+                <a class="fourth-page" href=""><h2 class="fourth-page">View Live</h2></a>
+                <a class="fourth-page" href=""><h2 class="fourth-page">View Code</h2></a>
               </div>
             </div>
           </div>
@@ -228,13 +228,21 @@
         <h2 class="fifth-page">Reach Me Out</h2>
         <h1 class="fifth-page">Lets Build Something great Together</h1>
         <form action="" class="form-container fifth-page">
-          <label for="Name-or-company-name"><h2 class="fifth-page">Name/Company Name</h2></label>
-          <input type="text" id="name-or-company-name" name="Name-or-company-name" />
-          <label for="contact-number"><h2 class="fifth-page">Contact Number</h2></label>
-          <input type="number" id="contact-number" />
-          <label for="message"><h2 class="fifth-page">Message</h2></label>
-          <textarea name="message" id="message" cols="100%" rows="10"></textarea>
-          <button type="button" class="fifth-page"><h2>Send Email</h2></button>
+          <div>
+            <label for="Name-or-company-name"><h2 class="fifth-page">Name/Company Name</h2></label>
+            <input type="text" id="name-or-company-name" name="Name-or-company-name" />
+          </div>
+          <div>
+            <label for="contact-number"><h2 class="fifth-page">Contact Number</h2></label>
+            <input type="number" id="contact-number" />
+          </div>
+          <div>
+            <label for="message"><h2 class="fifth-page">Message</h2></label>
+            <textarea name="message" id="message"></textarea>
+          </div>
+          <div>
+            <button type="button" class="fifth-page"><h2>Send Email</h2></button>
+          </div>
         </form>
       </section>
     </main>

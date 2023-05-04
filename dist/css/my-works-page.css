@@ -2,44 +2,61 @@
   font-family: "Open Sans", sans-serif;
   color: #ffc0c7;
   text-align: center;
-}
-
-.card {
-  border: solid #ffc0c7;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 800px;
+  justify-content: center;
 }
-
-.card-image {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
+#my-works-page h1.fourth-page {
+  font-size: 3vw;
 }
-
-.card-container {
+#my-works-page .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
-  gap: 20px;
+  gap: 30px;
 }
-
-.card-image-caption-container {
+#my-works-page .card-container .card {
+  border: solid #ffc0c7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  max-width: 800px;
+}
+#my-works-page .card-container .card .card-image {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
 }
-
-h1.fourth-page {
-  font-size: 56px;
+#my-works-page .card-container .card .card-image-caption-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-
-h2.fourth-page {
-  font-size: 28px;
+#my-works-page .card-container .card .card-image-caption-container h2.fourth-page {
+  font-size: 30px;
 }
-
-button.fourth-page {
+#my-works-page .card-container .card .card-image-caption-container div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#my-works-page .card-container .card .card-image-caption-container div a.fourth-page {
   background-color: #ffc0c7;
-  border: #ffc0c7 solid;
   color: #5d0510;
+  width: 30%;
+  padding: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#my-works-page .card-container .card .card-image-caption-container div a.fourth-page h2.fourth-page {
+  font-size: 2vw;
+}
+#my-works-page .card-container .card .card-image-caption-container div a.fourth-page:hover {
+  background-color: bisque;
+  border-radius: 40px;
 }/*# sourceMappingURL=my-works-page.css.map */

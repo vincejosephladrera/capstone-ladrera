@@ -73,20 +73,17 @@ a.icons:hover {
   align-items: center;
   justify-content: center;
 }
-
-h1.first-page {
-  font-size: 160px;
+#landing-page h1 {
+  font-size: 8vw;
   text-transform: uppercase;
   font-weight: bolder;
 }
-
-h2.first-page {
-  font-size: 80px;
+#landing-page h2 {
+  font-size: 4vw;
   font-weight: bold;
 }
-
-h3.first-page {
-  font-size: 40px;
+#landing-page h3 {
+  font-size: 2vw;
 }
 
 #hire-me-button {
@@ -115,56 +112,44 @@ h3.first-page {
   text-align: center;
   min-height: 100vh;
   max-width: 100vw;
+  display: flex;
+  align-items: center;
 }
-
-h1.third-page {
-  display: block;
-  font-size: 32px;
-  width: 100vw;
-  padding-top: 100px;
-}
-
-.image {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
-}
-
-.image-container.third-page {
-  width: 450px;
-}
-
-.travelling-hobby-container.third-page {
+#about-me-page-hobby .travelling-hobby-container.third-page {
   display: flex;
   flex-wrap: wrap;
-  justify-content: center;
-  gap: 60px;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
   width: 100%;
-  margin-top: 30px;
+  padding-left: 40px;
+  padding-right: 40px;
   height: auto;
 }
-
-.travelling-caption-container.third-page {
-  width: 500px;
-  padding: 10px;
+#about-me-page-hobby .travelling-hobby-container.third-page .travelling-caption-container.third-page {
+  max-width: 900px;
   height: auto;
   display: flex;
   align-items: center;
   border: #ffc0c7 dotted;
 }
-
-.travelling-image-container.third-page {
+#about-me-page-hobby .travelling-hobby-container.third-page .travelling-caption-container.third-page h2.third-page {
+  font-size: 2vw;
+}
+#about-me-page-hobby .travelling-image-container.third-page {
   display: flex;
-  justify-content: start;
+  justify-content: center;
   gap: 10px;
+  width: 100%;
   flex-wrap: wrap;
 }
-
-h2.third-page {
-  text-align: left;
-  font-size: 24px;
-  color: #ffc0c7;
-  vertical-align: middle;
+#about-me-page-hobby .travelling-image-container.third-page .image-container.third-page {
+  width: 450px;
+}
+#about-me-page-hobby .travelling-image-container.third-page .image-container.third-page .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
 }
 
 #about-me-skills {
@@ -172,110 +157,129 @@ h2.third-page {
   flex-direction: column;
   gap: 30px;
   align-items: center;
+  justify-content: center;
   font-family: "Open Sans", sans-serif;
   color: #ffc0c7;
   text-align: center;
 }
-
-p {
+#about-me-skills #about-me-caption-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  justify-content: space-around;
+  align-items: center;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 45%;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container p {
   color: #ffc0c7;
   font-family: "Open Sans", sans-serif;
-  font-size: 18px;
+  font-size: 1.5vw;
 }
-
-#about-me-text-container {
-  max-width: 500px;
+#about-me-skills #about-me-caption-container #about-me-image-container {
+  width: 30%;
+  padding-top: 20px;
 }
-
-#about-me-text-container {
+#about-me-skills #about-me-caption-container #about-me-image-container .image {
+  -o-object-fit: contain;
+     object-fit: contain;
+  max-width: 100%;
+}
+#about-me-skills #skills-acquired-container {
+  margin-top: 20px;
+  max-width: 100vw;
   display: flex;
   flex-direction: column;
   gap: 20px;
 }
-
-h1.second-page {
+#about-me-skills #skills-acquired-container h1.second-page {
   color: #ffc0c7;
   font-family: "Open Sans", sans-serif;
-  font-size: 40px;
+  font-size: 3vw;
   font-weight: bolder;
 }
-
-h2.second-page {
-  font-size: 20px;
+#about-me-skills #skills-acquired-container h2.second-page {
+  font-size: 1.5vw;
   font-weight: bold;
 }
-
-h3.second-page {
-  font-size: 20px;
-}
-
-#about-me-caption-container {
-  display: flex;
-}
-
-#skills-acquired-container {
-  font-size: 80px;
-}
-
-.skills-icon {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  width: -moz-fit-content;
-  width: fit-content;
-  list-style: none;
-}
-
-.skills-icon-container {
+#about-me-skills #skills-acquired-container .skills-icon-container {
   display: flex;
   justify-content: center;
-  gap: 20px;
+  gap: 40px;
+  list-style: none;
+}
+#about-me-skills #skills-acquired-container .skills-icon-container i {
+  font-size: 5vw;
+}
+#about-me-skills #skills-acquired-container .skills-icon-container h3.second-page {
+  font-size: 1.5vw;
 }
 
 #my-works-page {
   font-family: "Open Sans", sans-serif;
   color: #ffc0c7;
   text-align: center;
-}
-
-.card {
-  border: solid #ffc0c7;
+  min-height: 100vh;
   display: flex;
   flex-direction: column;
-  gap: 20px;
-  width: 800px;
+  justify-content: center;
 }
-
-.card-image {
-  -o-object-fit: contain;
-     object-fit: contain;
-  width: 100%;
+#my-works-page h1.fourth-page {
+  font-size: 3vw;
 }
-
-.card-container {
+#my-works-page .card-container {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 30px;
-  gap: 20px;
+  gap: 30px;
 }
-
-.card-image-caption-container {
+#my-works-page .card-container .card {
+  border: solid #ffc0c7;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 40px;
+  max-width: 800px;
+}
+#my-works-page .card-container .card .card-image {
+  -o-object-fit: contain;
+     object-fit: contain;
   width: 100%;
 }
-
-h1.fourth-page {
-  font-size: 56px;
+#my-works-page .card-container .card .card-image-caption-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
 }
-
-h2.fourth-page {
-  font-size: 28px;
+#my-works-page .card-container .card .card-image-caption-container h2.fourth-page {
+  font-size: 30px;
 }
-
-button.fourth-page {
+#my-works-page .card-container .card .card-image-caption-container div {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+}
+#my-works-page .card-container .card .card-image-caption-container div a.fourth-page {
   background-color: #ffc0c7;
-  border: #ffc0c7 solid;
   color: #5d0510;
+  width: 30%;
+  padding: 20px;
+  border-radius: 30px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#my-works-page .card-container .card .card-image-caption-container div a.fourth-page h2.fourth-page {
+  font-size: 2vw;
+}
+#my-works-page .card-container .card .card-image-caption-container div a.fourth-page:hover {
+  background-color: bisque;
+  border-radius: 40px;
 }
 
 #contact-me-page {
@@ -284,22 +288,56 @@ button.fourth-page {
   display: flex;
   flex-direction: column;
   align-items: center;
+  gap: 20px;
+  justify-content: center;
 }
-
-h1.fifth-page {
+#contact-me-page h2.fifth-page {
+  font-size: 2vw;
+  width: 100%;
+  text-align: center;
+}
+#contact-me-page h1.fifth-page {
   color: #ffc0c7;
-  font-size: 56px;
+  font-size: 4vw;
   text-transform: uppercase;
+  width: 100%;
+  text-align: center;
 }
-
-h2.fifth-page {
-  font-size: 28px;
-}
-
-.form-container.fifth-page {
+#contact-me-page .form-container.fifth-page {
   display: flex;
   flex-direction: column;
-  width: 400px;
+  align-items: center;
+  justify-content: start;
+  width: 100%;
+  gap: 20px;
+}
+#contact-me-page .form-container.fifth-page div {
+  margin-left: 40px;
+  min-width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+#contact-me-page .form-container.fifth-page div input {
+  width: 80%;
+  min-height: 60px;
+}
+#contact-me-page .form-container.fifth-page div #message {
+  width: 80%;
+  min-height: 240px;
+}
+#contact-me-page .form-container.fifth-page button {
+  margin-left: 40px;
+  padding: 20px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#contact-me-page .form-container.fifth-page button h2 {
+  font-size: 2vw;
+}
+#contact-me-page .form-container.fifth-page button:hover {
+  background-color: bisque;
+  border-radius: 40px;
 }
 
 button.fifth-page {
