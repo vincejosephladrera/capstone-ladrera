@@ -10,8 +10,9 @@
 @import "contact-me-page";
 
 body {
-  min-height: 100vh;
+  height: 100vh;
   width: -webkit-fill-available;
+  overflow-y: scroll;
 }
 
 section {
@@ -27,4 +28,11 @@ main {
 
 main {
   overflow-x: hidden;
+  min-height: 100vh;
+}
+
+@media screen and (width <= 768px) {
+  main {
+    margin-left: 0;
+  }
 }

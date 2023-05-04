@@ -25,6 +25,7 @@
   color: #ffc0c7;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5vw;
+  text-align: justify;
 }
 #about-me-skills #about-me-caption-container #about-me-image-container {
   width: 30%;
@@ -63,4 +64,59 @@
 }
 #about-me-skills #skills-acquired-container .skills-icon-container h3.second-page {
   font-size: 1.5vw;
+}
+
+@media screen and (width <= 768px) {
+  #about-me-skills #about-me-caption-container {
+    flex-direction: column;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container {
+    width: 100%;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container p {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-image-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+  }
+  #about-me-skills #skills-acquired-container h1.second-page {
+    font-size: 25px;
+  }
+  #about-me-skills #skills-acquired-container h2.second-page {
+    font-size: 18px;
+  }
+  #about-me-skills #skills-acquired-container .skills-icon-container .skills-icon i {
+    font-size: 100px;
+  }
+  #about-me-skills #skills-acquired-container .skills-icon-container .skills-icon h3.second-page {
+    font-size: 18px;
+  }
+}
+@media screen and (width <= 425px) {
+  #about-me-skills #about-me-caption-container #about-me-text-container p {
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-image-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+  }
+  #about-me-skills #skills-acquired-container h1.second-page {
+    font-size: 25px;
+  }
+  #about-me-skills #skills-acquired-container h2.second-page {
+    font-size: 14px;
+  }
+  #about-me-skills #skills-acquired-container .skills-icon-container .skills-icon i {
+    font-size: 50px;
+  }
+  #about-me-skills #skills-acquired-container .skills-icon-container .skills-icon h3.second-page {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=aboutme-skills-page.css.map */

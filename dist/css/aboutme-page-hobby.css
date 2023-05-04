@@ -43,4 +43,21 @@
   -o-object-fit: contain;
      object-fit: contain;
   max-width: 100%;
+}
+
+@media screen and (width <= 768px) {
+  #about-me-page-hobby {
+    margin-top: 40px;
+  }
+  #about-me-page-hobby .travelling-hobby-container.third-page .travelling-caption-container.third-page h2.third-page {
+    font-size: 28px;
+  }
+}
+@media screen and (width <= 425px) {
+  #about-me-page-hobby {
+    margin-top: 40px;
+  }
+  #about-me-page-hobby .travelling-hobby-container.third-page .travelling-caption-container.third-page h2.third-page {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=aboutme-page-hobby.css.map */

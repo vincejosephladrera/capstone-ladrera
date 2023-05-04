@@ -59,10 +59,69 @@ a.icons:hover {
   margin-bottom: 10px;
 }
 
+@media screen and (width <= 768px) {
+  #side-nav {
+    display: none;
+  }
+}
 #bottom-nav {
   display: none;
 }
 
+@media screen and (width <= 768px) {
+  #bottom-nav {
+    position: fixed;
+    bottom: 0px;
+    background-color: #282a35;
+    display: flex;
+    width: 100vw;
+    height: 90px;
+  }
+  #bottom-nav .icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+    width: 100%;
+    gap: 20px;
+  }
+  #bottom-nav .icons-container #menu-icon {
+    cursor: pointer;
+  }
+  #bottom-nav .icons-container #menu-icon #burger {
+    font-size: 30px;
+    color: #ffc0c7;
+    transition: all 1s;
+  }
+  #bottom-nav .icons-container #about-bottom {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  #bottom-nav .icons-container #works-bottom {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  #bottom-nav .icons-container #contact-bottom {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  #bottom-nav .icons-container #about-bottom.show {
+    transform: translateY(-80px);
+    visibility: visible;
+  }
+  #bottom-nav .icons-container #works-bottom.show {
+    transform: translateX(80px) translateY(-50px);
+    visibility: visible;
+  }
+  #bottom-nav .icons-container #contact-bottom.show {
+    transform: translateX(150px);
+    visibility: visible;
+  }
+}
 #landing-page {
   font-family: "Open Sans", sans-serif;
   color: #ffc0c7;
@@ -101,10 +160,54 @@ a.icons:hover {
   border-radius: 15px;
 }
 
+@media screen and (width <= 425px) {
+  #landing-page h1 {
+    font-size: 50px;
+    text-align: center;
+  }
+  #landing-page h2 {
+    font-size: 25px;
+    text-align: center;
+  }
+  #landing-page h3 {
+    font-size: 12.5px;
+    text-align: center;
+  }
+}
 #top-nav {
   display: none;
 }
 
+@media screen and (width <= 768px) {
+  #top-nav {
+    display: flex;
+    justify-content: space-between;
+    height: 90px;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: #282a35;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    gap: 20px;
+  }
+  #top-nav #top-nav-first-icon-container {
+    flex: 1;
+  }
+  #top-nav #top-nav-last-icon-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    flex: 1;
+  }
+}
+@media screen and (width <= 320px) {
+  #top-nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}
 #about-me-page-hobby {
   background-color: #282a35;
   font-family: "Open Sans", sans-serif;
@@ -152,6 +255,22 @@ a.icons:hover {
   max-width: 100%;
 }
 
+@media screen and (width <= 768px) {
+  #about-me-page-hobby {
+    margin-top: 40px;
+  }
+  #about-me-page-hobby .travelling-hobby-container.third-page .travelling-caption-container.third-page h2.third-page {
+    font-size: 28px;
+  }
+}
+@media screen and (width <= 425px) {
+  #about-me-page-hobby {
+    margin-top: 40px;
+  }
+  #about-me-page-hobby .travelling-hobby-container.third-page .travelling-caption-container.third-page h2.third-page {
+    font-size: 14px;
+  }
+}
 #about-me-skills {
   display: flex;
   flex-direction: column;
@@ -179,6 +298,7 @@ a.icons:hover {
   color: #ffc0c7;
   font-family: "Open Sans", sans-serif;
   font-size: 1.5vw;
+  text-align: justify;
 }
 #about-me-skills #about-me-caption-container #about-me-image-container {
   width: 30%;
@@ -219,6 +339,60 @@ a.icons:hover {
   font-size: 1.5vw;
 }
 
+@media screen and (width <= 768px) {
+  #about-me-skills #about-me-caption-container {
+    flex-direction: column;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container {
+    width: 100%;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container p {
+    font-size: 20px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-image-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+  }
+  #about-me-skills #skills-acquired-container h1.second-page {
+    font-size: 25px;
+  }
+  #about-me-skills #skills-acquired-container h2.second-page {
+    font-size: 18px;
+  }
+  #about-me-skills #skills-acquired-container .skills-icon-container .skills-icon i {
+    font-size: 100px;
+  }
+  #about-me-skills #skills-acquired-container .skills-icon-container .skills-icon h3.second-page {
+    font-size: 18px;
+  }
+}
+@media screen and (width <= 425px) {
+  #about-me-skills #about-me-caption-container #about-me-text-container p {
+    font-size: 12px;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-image-container {
+    padding-left: 40px;
+    padding-right: 40px;
+    width: 100%;
+  }
+  #about-me-skills #skills-acquired-container h1.second-page {
+    font-size: 25px;
+  }
+  #about-me-skills #skills-acquired-container h2.second-page {
+    font-size: 14px;
+  }
+  #about-me-skills #skills-acquired-container .skills-icon-container .skills-icon i {
+    font-size: 50px;
+  }
+  #about-me-skills #skills-acquired-container .skills-icon-container .skills-icon h3.second-page {
+    font-size: 14px;
+  }
+}
 #my-works-page {
   font-family: "Open Sans", sans-serif;
   color: #ffc0c7;
@@ -244,7 +418,9 @@ a.icons:hover {
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  max-width: 800px;
+  width: 800px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 #my-works-page .card-container .card .card-image {
   -o-object-fit: contain;
@@ -258,7 +434,7 @@ a.icons:hover {
   gap: 40px;
 }
 #my-works-page .card-container .card .card-image-caption-container h2.fourth-page {
-  font-size: 30px;
+  font-size: 2vw;
 }
 #my-works-page .card-container .card .card-image-caption-container div {
   display: flex;
@@ -275,13 +451,55 @@ a.icons:hover {
   transition: all 0.4s;
 }
 #my-works-page .card-container .card .card-image-caption-container div a.fourth-page h2.fourth-page {
-  font-size: 2vw;
+  font-size: 1vw;
 }
 #my-works-page .card-container .card .card-image-caption-container div a.fourth-page:hover {
   background-color: bisque;
   border-radius: 40px;
 }
 
+@media screen and (width <= 768px) {
+  #my-works-page h1.fourth-page {
+    font-size: 36px;
+  }
+  #my-works-page .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  #my-works-page .card-container .card .card-image-caption-container h2.fourth-page {
+    font-size: 28px;
+  }
+  #my-works-page .card-container .card .card-image-caption-container div a.fourth-page {
+    width: 80%;
+  }
+  #my-works-page .card-container .card .card-image-caption-container div a.fourth-page h2.fourth-page {
+    font-size: 28px;
+  }
+}
+@media screen and (width <= 425px) {
+  #my-works-page h1.fourth-page {
+    font-size: 18px;
+  }
+  #my-works-page .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  #my-works-page .card-container .card .card-image-caption-container h2.fourth-page {
+    font-size: 14px;
+  }
+  #my-works-page .card-container .card .card-image-caption-container div a.fourth-page {
+    width: 80%;
+  }
+  #my-works-page .card-container .card .card-image-caption-container div a.fourth-page h2.fourth-page {
+    font-size: 14px;
+  }
+}
 #contact-me-page {
   color: #ffc0c7;
   font-family: "Open Sans", sans-serif;
@@ -289,7 +507,10 @@ a.icons:hover {
   flex-direction: column;
   align-items: center;
   gap: 20px;
+  min-height: 100vh;
   justify-content: center;
+  padding-bottom: 90px;
+  padding-top: 90px;
 }
 #contact-me-page h2.fifth-page {
   font-size: 2vw;
@@ -307,16 +528,15 @@ a.icons:hover {
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: start;
+  justify-content: center;
   width: 100%;
   gap: 20px;
 }
 #contact-me-page .form-container.fifth-page div {
-  margin-left: 40px;
   min-width: 100%;
   display: flex;
   flex-direction: column;
-  align-items: start;
+  align-items: center;
 }
 #contact-me-page .form-container.fifth-page div input {
   width: 80%;
@@ -345,9 +565,34 @@ button.fifth-page {
   color: #5d0510;
 }
 
+@media screen and (width <= 768px) {
+  #contact-me-page h2.fifth-page {
+    font-size: 24px;
+  }
+  #contact-me-page h1.fifth-page {
+    color: #ffc0c7;
+    font-size: 28px;
+  }
+  #contact-me-page .form-container.fifth-page button h2 {
+    font-size: 24px;
+  }
+}
+@media screen and (width <= 465px) {
+  #contact-me-page h2.fifth-page {
+    font-size: 12px;
+  }
+  #contact-me-page h1.fifth-page {
+    color: #ffc0c7;
+    font-size: 14px;
+  }
+  #contact-me-page .form-container.fifth-page button h2 {
+    font-size: 12px;
+  }
+}
 body {
-  min-height: 100vh;
+  height: 100vh;
   width: -webkit-fill-available;
+  overflow-y: scroll;
 }
 
 section {
@@ -363,4 +608,11 @@ main {
 
 main {
   overflow-x: hidden;
+  min-height: 100vh;
+}
+
+@media screen and (width <= 768px) {
+  main {
+    margin-left: 0;
+  }
 }/*# sourceMappingURL=main.css.map */

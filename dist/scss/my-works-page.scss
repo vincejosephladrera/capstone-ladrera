@@ -26,7 +26,9 @@
       flex-direction: column;
       justify-content: center;
       gap: 40px;
-      max-width: 800px;
+      width: 800px;
+      margin-left: 40px;
+      margin-right: 40px;
 
       .card-image {
         object-fit: contain;
@@ -40,7 +42,7 @@
         gap: 40px;
 
         h2.fourth-page {
-          font-size: 30px;
+          font-size: 2vw;
         }
 
         div {
@@ -58,13 +60,81 @@
             transition: all 0.4s;
 
             h2.fourth-page {
-              font-size: 2vw;
+              font-size: 1vw;
             }
           }
 
           a.fourth-page:hover {
             background-color: bisque;
             border-radius: 40px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width <= 768px) {
+  #my-works-page {
+    h1.fourth-page {
+      font-size: 36px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 30px;
+
+      .card {
+        .card-image-caption-container {
+          h2.fourth-page {
+            font-size: 28px;
+          }
+
+          div {
+            a.fourth-page {
+              width: 80%;
+
+              h2.fourth-page {
+                font-size: 28px;
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width <= 425px) {
+  #my-works-page {
+    h1.fourth-page {
+      font-size: 18px;
+    }
+
+    .card-container {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 30px;
+      gap: 30px;
+
+      .card {
+        .card-image-caption-container {
+          h2.fourth-page {
+            font-size: 14px;
+          }
+
+          div {
+            a.fourth-page {
+              width: 80%;
+
+              h2.fourth-page {
+                font-size: 14px;
+              }
+            }
           }
         }
       }

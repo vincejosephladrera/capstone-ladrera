@@ -51,3 +51,29 @@
     }
   }
 }
+
+@media screen and (width <=768px) {
+  #about-me-page-hobby {
+    margin-top: 40px;
+    .travelling-hobby-container.third-page {
+      .travelling-caption-container.third-page {
+        h2.third-page {
+          font-size: 28px;
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width <=425px) {
+  #about-me-page-hobby {
+    margin-top: 40px;
+    .travelling-hobby-container.third-page {
+      .travelling-caption-container.third-page {
+        h2.third-page {
+          font-size: 14px;
+        }
+      }
+    }
+  }
+}

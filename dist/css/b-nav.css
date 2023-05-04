@@ -1,3 +1,58 @@
 #bottom-nav {
   display: none;
+}
+
+@media screen and (width <= 768px) {
+  #bottom-nav {
+    position: fixed;
+    bottom: 0px;
+    background-color: #282a35;
+    display: flex;
+    width: 100vw;
+    height: 90px;
+  }
+  #bottom-nav .icons-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-left: 40px;
+    width: 100%;
+    gap: 20px;
+  }
+  #bottom-nav .icons-container #menu-icon {
+    cursor: pointer;
+  }
+  #bottom-nav .icons-container #menu-icon #burger {
+    font-size: 30px;
+    color: #ffc0c7;
+    transition: all 1s;
+  }
+  #bottom-nav .icons-container #about-bottom {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  #bottom-nav .icons-container #works-bottom {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  #bottom-nav .icons-container #contact-bottom {
+    position: absolute;
+    visibility: hidden;
+    transition: all 0.4s;
+  }
+  #bottom-nav .icons-container #about-bottom.show {
+    transform: translateY(-80px);
+    visibility: visible;
+  }
+  #bottom-nav .icons-container #works-bottom.show {
+    transform: translateX(80px) translateY(-50px);
+    visibility: visible;
+  }
+  #bottom-nav .icons-container #contact-bottom.show {
+    transform: translateX(150px);
+    visibility: visible;
+  }
 }/*# sourceMappingURL=b-nav.css.map */

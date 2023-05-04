@@ -27,6 +27,7 @@
         color: $secondary-color;
         font-family: $primary-font-style;
         font-size: 1.5vw;
+        text-align: justify;
       }
     }
 
@@ -71,6 +72,93 @@
 
       h3.second-page {
         font-size: 1.5vw;
+      }
+    }
+  }
+}
+
+@media screen and (width <= 768px) {
+  #about-me-skills {
+    #about-me-caption-container {
+      flex-direction: column;
+
+      #about-me-text-container {
+        width: 100%;
+        p {
+          font-size: 20px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+
+      #about-me-image-container {
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+      }
+    }
+
+    #skills-acquired-container {
+      h1.second-page {
+        font-size: 25px;
+      }
+
+      h2.second-page {
+        font-size: 18px;
+      }
+
+      .skills-icon-container {
+        .skills-icon {
+          i {
+            font-size: 100px;
+          }
+
+          h3.second-page {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media screen and (width <= 425px) {
+  #about-me-skills {
+    #about-me-caption-container {
+      #about-me-text-container {
+        p {
+          font-size: 12px;
+          padding-left: 40px;
+          padding-right: 40px;
+        }
+      }
+
+      #about-me-image-container {
+        padding-left: 40px;
+        padding-right: 40px;
+        width: 100%;
+      }
+    }
+
+    #skills-acquired-container {
+      h1.second-page {
+        font-size: 25px;
+      }
+
+      h2.second-page {
+        font-size: 14px;
+      }
+
+      .skills-icon-container {
+        .skills-icon {
+          i {
+            font-size: 50px;
+          }
+
+          h3.second-page {
+            font-size: 14px;
+          }
+        }
       }
     }
   }

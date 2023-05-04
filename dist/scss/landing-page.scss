@@ -40,3 +40,22 @@
   color: $accent-color;
   border-radius: 15px;
 }
+
+@media screen and (width <= 425px) {
+  #landing-page {
+    h1 {
+      font-size: 50px;
+      text-align: center;
+    }
+
+    h2 {
+      font-size: 25px;
+      text-align: center;
+    }
+
+    h3 {
+      font-size: 12.5px;
+      text-align: center;
+    }
+  }
+}

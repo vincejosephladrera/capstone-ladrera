@@ -3,3 +3,37 @@
 #top-nav {
   display: none;
 }
+
+@media screen and (width <= 768px) {
+  #top-nav {
+    display: flex;
+    justify-content: space-between;
+    height: $nav-measurement;
+    align-items: center;
+    padding-left: 40px;
+    padding-right: 40px;
+    background-color: $primary-color;
+    position: fixed;
+    top: 0px;
+    width: 100vw;
+    gap: 20px;
+
+    #top-nav-first-icon-container {
+      flex: 1;
+    }
+
+    #top-nav-last-icon-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: end;
+      flex: 1;
+    }
+  }
+}
+
+@media screen and (width <= 320px) {
+  #top-nav {
+    padding-left: 0;
+    padding-right: 0;
+  }
+}

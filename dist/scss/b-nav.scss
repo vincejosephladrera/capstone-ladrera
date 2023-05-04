@@ -3,3 +3,66 @@
 #bottom-nav {
   display: none;
 }
+
+@media screen and (width <= 768px) {
+  #bottom-nav {
+    position: fixed;
+    bottom: 0px;
+    background-color: $primary-color;
+    display: flex;
+    width: 100vw;
+    height: $nav-measurement;
+
+    .icons-container {
+      display: flex;
+      flex-direction: row;
+      justify-content: flex-start;
+      align-items: center;
+      padding-left: 40px;
+      width: 100%;
+      gap: 20px;
+
+      #menu-icon {
+        cursor: pointer;
+        #burger {
+          font-size: 30px;
+          color: $secondary-color;
+          transition: all 1s;
+        }
+      }
+
+      #about-bottom {
+        position: absolute;
+        visibility: hidden;
+        transition: all 0.4s;
+      }
+
+      #works-bottom {
+        position: absolute;
+        visibility: hidden;
+        transition: all 0.4s;
+      }
+
+      #contact-bottom {
+        position: absolute;
+        visibility: hidden;
+        transition: all 0.4s;
+      }
+
+      #about-bottom.show {
+        transform: translateY(-80px);
+        visibility: visible;
+      }
+
+      #works-bottom.show {
+        transform: translateX(80px) translateY(-50px);
+        visibility: visible;
+      }
+
+      #contact-bottom.show {
+        transform: translateX(150px);
+        visibility: visible;
+      }
+    }
+  }
+}

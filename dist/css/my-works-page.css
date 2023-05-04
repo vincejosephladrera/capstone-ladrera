@@ -23,7 +23,9 @@
   flex-direction: column;
   justify-content: center;
   gap: 40px;
-  max-width: 800px;
+  width: 800px;
+  margin-left: 40px;
+  margin-right: 40px;
 }
 #my-works-page .card-container .card .card-image {
   -o-object-fit: contain;
@@ -37,7 +39,7 @@
   gap: 40px;
 }
 #my-works-page .card-container .card .card-image-caption-container h2.fourth-page {
-  font-size: 30px;
+  font-size: 2vw;
 }
 #my-works-page .card-container .card .card-image-caption-container div {
   display: flex;
@@ -54,9 +56,52 @@
   transition: all 0.4s;
 }
 #my-works-page .card-container .card .card-image-caption-container div a.fourth-page h2.fourth-page {
-  font-size: 2vw;
+  font-size: 1vw;
 }
 #my-works-page .card-container .card .card-image-caption-container div a.fourth-page:hover {
   background-color: bisque;
   border-radius: 40px;
+}
+
+@media screen and (width <= 768px) {
+  #my-works-page h1.fourth-page {
+    font-size: 36px;
+  }
+  #my-works-page .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  #my-works-page .card-container .card .card-image-caption-container h2.fourth-page {
+    font-size: 28px;
+  }
+  #my-works-page .card-container .card .card-image-caption-container div a.fourth-page {
+    width: 80%;
+  }
+  #my-works-page .card-container .card .card-image-caption-container div a.fourth-page h2.fourth-page {
+    font-size: 28px;
+  }
+}
+@media screen and (width <= 425px) {
+  #my-works-page h1.fourth-page {
+    font-size: 18px;
+  }
+  #my-works-page .card-container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    gap: 30px;
+  }
+  #my-works-page .card-container .card .card-image-caption-container h2.fourth-page {
+    font-size: 14px;
+  }
+  #my-works-page .card-container .card .card-image-caption-container div a.fourth-page {
+    width: 80%;
+  }
+  #my-works-page .card-container .card .card-image-caption-container div a.fourth-page h2.fourth-page {
+    font-size: 14px;
+  }
 }/*# sourceMappingURL=my-works-page.css.map */
