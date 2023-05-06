@@ -39,10 +39,12 @@
 #contact-me-page .form-container.fifth-page div input {
   width: 80%;
   min-height: 60px;
+  font-size: 2vw;
 }
 #contact-me-page .form-container.fifth-page div #message {
   width: 80%;
   min-height: 240px;
+  font-size: 2vw;
 }
 #contact-me-page .form-container.fifth-page button {
   margin-left: 40px;

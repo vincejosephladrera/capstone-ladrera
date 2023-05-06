@@ -12,7 +12,8 @@
 body {
   height: 100vh;
   width: -webkit-fill-available;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 section {
@@ -28,7 +29,9 @@ main {
 
 main {
   overflow-x: hidden;
-  min-height: 100vh;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 @media screen and (width <= 768px) {

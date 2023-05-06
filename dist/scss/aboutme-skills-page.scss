@@ -29,6 +29,41 @@
         font-size: 1.5vw;
         text-align: justify;
       }
+
+      #cv-download-container {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+
+        a {
+          display: flex;
+          flex-direction: column;
+          width: fit-content;
+          align-items: center;
+          background-color: $secondary-color;
+          border-radius: 15px;
+          padding: 10px;
+          cursor: pointer;
+          transition: all 0.4s;
+
+          i {
+            font-size: 5vw;
+            width: fit-content;
+            color: $accent-color;
+          }
+
+          h2 {
+            font-size: 1.5vw;
+            color: $accent-color;
+            text-transform: uppercase;
+          }
+        }
+
+        a:hover {
+          background-color: bisque;
+          border-radius: 40px;
+        }
+      }
     }
 
     #about-me-image-container {
@@ -89,6 +124,18 @@
           padding-left: 40px;
           padding-right: 40px;
         }
+
+        #cv-download-container {
+          a {
+            i {
+              font-size: 50px;
+            }
+
+            h2 {
+              font-size: 24px;
+            }
+          }
+        }
       }
 
       #about-me-image-container {
@@ -130,6 +177,18 @@
           font-size: 12px;
           padding-left: 40px;
           padding-right: 40px;
+        }
+
+        #cv-download-container {
+          a {
+            i {
+              font-size: 25px;
+            }
+
+            h2 {
+              font-size: 12px;
+            }
+          }
         }
       }
 

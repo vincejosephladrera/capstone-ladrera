@@ -300,6 +300,38 @@ a.icons:hover {
   font-size: 1.5vw;
   text-align: justify;
 }
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  background-color: #ffc0c7;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a i {
+  font-size: 5vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #5d0510;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a h2 {
+  font-size: 1.5vw;
+  color: #5d0510;
+  text-transform: uppercase;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a:hover {
+  background-color: bisque;
+  border-radius: 40px;
+}
 #about-me-skills #about-me-caption-container #about-me-image-container {
   width: 30%;
   padding-top: 20px;
@@ -351,6 +383,12 @@ a.icons:hover {
     padding-left: 40px;
     padding-right: 40px;
   }
+  #about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a i {
+    font-size: 50px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a h2 {
+    font-size: 24px;
+  }
   #about-me-skills #about-me-caption-container #about-me-image-container {
     padding-left: 40px;
     padding-right: 40px;
@@ -374,6 +412,12 @@ a.icons:hover {
     font-size: 12px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a i {
+    font-size: 25px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a h2 {
+    font-size: 12px;
   }
   #about-me-skills #about-me-caption-container #about-me-image-container {
     padding-left: 40px;
@@ -431,6 +475,8 @@ a.icons:hover {
   width: 100%;
   display: flex;
   flex-direction: column;
+  padding-left: 20px;
+  padding-right: 20px;
   gap: 40px;
 }
 #my-works-page .card-container .card .card-image-caption-container h2.fourth-page {
@@ -541,10 +587,12 @@ a.icons:hover {
 #contact-me-page .form-container.fifth-page div input {
   width: 80%;
   min-height: 60px;
+  font-size: 2vw;
 }
 #contact-me-page .form-container.fifth-page div #message {
   width: 80%;
   min-height: 240px;
+  font-size: 2vw;
 }
 #contact-me-page .form-container.fifth-page button {
   margin-left: 40px;
@@ -592,7 +640,8 @@ button.fifth-page {
 body {
   height: 100vh;
   width: -webkit-fill-available;
-  overflow-y: scroll;
+  overflow-y: hidden;
+  overflow-x: hidden;
 }
 
 section {
@@ -608,7 +657,9 @@ main {
 
 main {
   overflow-x: hidden;
-  min-height: 100vh;
+  scroll-behavior: smooth;
+  height: 100vh;
+  overflow-y: scroll;
 }
 
 @media screen and (width <= 768px) {

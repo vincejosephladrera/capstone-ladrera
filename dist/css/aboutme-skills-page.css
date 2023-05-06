@@ -27,6 +27,38 @@
   font-size: 1.5vw;
   text-align: justify;
 }
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a {
+  display: flex;
+  flex-direction: column;
+  width: -moz-fit-content;
+  width: fit-content;
+  align-items: center;
+  background-color: #ffc0c7;
+  border-radius: 15px;
+  padding: 10px;
+  cursor: pointer;
+  transition: all 0.4s;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a i {
+  font-size: 5vw;
+  width: -moz-fit-content;
+  width: fit-content;
+  color: #5d0510;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a h2 {
+  font-size: 1.5vw;
+  color: #5d0510;
+  text-transform: uppercase;
+}
+#about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a:hover {
+  background-color: bisque;
+  border-radius: 40px;
+}
 #about-me-skills #about-me-caption-container #about-me-image-container {
   width: 30%;
   padding-top: 20px;
@@ -78,6 +110,12 @@
     padding-left: 40px;
     padding-right: 40px;
   }
+  #about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a i {
+    font-size: 50px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a h2 {
+    font-size: 24px;
+  }
   #about-me-skills #about-me-caption-container #about-me-image-container {
     padding-left: 40px;
     padding-right: 40px;
@@ -101,6 +139,12 @@
     font-size: 12px;
     padding-left: 40px;
     padding-right: 40px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a i {
+    font-size: 25px;
+  }
+  #about-me-skills #about-me-caption-container #about-me-text-container #cv-download-container a h2 {
+    font-size: 12px;
   }
   #about-me-skills #about-me-caption-container #about-me-image-container {
     padding-left: 40px;
