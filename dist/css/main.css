@@ -554,7 +554,6 @@ a.icons:hover {
   align-items: center;
   gap: 20px;
   min-height: 100vh;
-  justify-content: center;
   padding-bottom: 90px;
   padding-top: 90px;
 }
@@ -570,73 +569,18 @@ a.icons:hover {
   width: 100%;
   text-align: center;
 }
-#contact-me-page .form-container.fifth-page {
+#contact-me-page .icons-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
+  width: 100vw;
   justify-content: center;
-  width: 100%;
-  gap: 20px;
 }
-#contact-me-page .form-container.fifth-page div {
-  min-width: 100%;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-#contact-me-page .form-container.fifth-page div input {
-  width: 80%;
-  min-height: 60px;
-  font-size: 2vw;
-}
-#contact-me-page .form-container.fifth-page div #message {
-  width: 80%;
-  min-height: 240px;
-  font-size: 2vw;
-}
-#contact-me-page .form-container.fifth-page button {
-  margin-left: 40px;
-  padding: 20px;
-  cursor: pointer;
-  transition: all 0.4s;
-}
-#contact-me-page .form-container.fifth-page button h2 {
-  font-size: 2vw;
-}
-#contact-me-page .form-container.fifth-page button:hover {
-  background-color: bisque;
-  border-radius: 40px;
+#contact-me-page .icons-container .icons {
+  width: -moz-fit-content;
+  width: fit-content;
+  font-size: 5vw;
 }
 
-button.fifth-page {
-  background-color: #ffc0c7;
-  color: #5d0510;
-}
-
-@media screen and (width <= 768px) {
-  #contact-me-page h2.fifth-page {
-    font-size: 24px;
-  }
-  #contact-me-page h1.fifth-page {
-    color: #ffc0c7;
-    font-size: 28px;
-  }
-  #contact-me-page .form-container.fifth-page button h2 {
-    font-size: 24px;
-  }
-}
-@media screen and (width <= 465px) {
-  #contact-me-page h2.fifth-page {
-    font-size: 12px;
-  }
-  #contact-me-page h1.fifth-page {
-    color: #ffc0c7;
-    font-size: 14px;
-  }
-  #contact-me-page .form-container.fifth-page button h2 {
-    font-size: 12px;
-  }
-}
 body {
   height: 100vh;
   width: -webkit-fill-available;
